@@ -1,5 +1,6 @@
 package com.springboot.reddis;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -10,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 @Repository
+@Slf4j
 public class UserDao {
 
     public static final String HASH_KEY = "User";
